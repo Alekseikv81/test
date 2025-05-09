@@ -4,4 +4,7 @@ jobs:
   pool:
     vmImage: 'ubuntu-latest'
   steps:
-  - bash: echo "Hello world"
+  - bash: az --version
+  displayName: 'Show Azure CLI version'
+  -bash: az pipelines build list
+  displayName: 'Show build list and PRs'
