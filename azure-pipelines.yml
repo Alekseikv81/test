@@ -4,4 +4,5 @@ jobs:
   pool:
     vmImage: 'ubuntu-latest'
   steps:
-  - bash: echo "Hello world"
+  - bash: az --version
+  displayName: "Azure Cli version"
